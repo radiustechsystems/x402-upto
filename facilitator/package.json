@@ -1,0 +1,28 @@
+{
+  "name": "@radius/x402-upto-facilitator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone facilitator server for x402 upto metered billing",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radius/x402-upto": "workspace:*",
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.0",
+    "viem": "^2.39.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/express": "^5.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}
